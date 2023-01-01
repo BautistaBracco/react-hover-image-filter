@@ -32,9 +32,15 @@ const App = () => {
 export default App
 ```
 
-## Visual Example
+## Visual Examples
 
-![Example](gif%20blur.gif)
+### From blur filter to no filter
+
+![Example 1](https://github.com/Pepito27/react-hover-image-filter/blob/main/gif%20blur.gif?raw=true)
+
+### From sepia filter to no filter
+
+![Example 2](https://github.com/Pepito27/react-hover-image-filter/blob/main/gif%20sepia.gif?raw=true)
 
 ## Props
 

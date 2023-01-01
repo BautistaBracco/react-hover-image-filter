@@ -44,18 +44,17 @@ export default App
 
 ## Props
 
-| Prop | Type | Required | Default | Description |
-| ---- | ---- | -------- | ------- | ----------- |
-
-| imageSrc | string | true | - | The image to be filtered |
-|paintEvent | "mousemove","holdclick" | false | "mousemove" | The event to be used to paint the image. It can be "mousemove" or "holdclick" |
-| fromFilter | string | false | "grayscale(100%)" | The filter to be applied to the image |
-| toFilter | string | false | "grayscale(0%)" | The filter to be applied to the image when the mouse is over the image |
-| width | number | true | - | The width of the image |
-| height | number | true | - | The height of the image |
-| pixelPaintedSize | number | true | - | The size of the pixel painted on the image |
-|canvasStyle | object | false | - | The style of the canvas |
-| canvasClassName | string | false | - | The className of the canvas |
+| Prop                 | Type               | Required    | Default           | Description                                                            |
+| -------------------- | ------------------ | ----------- | ----------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **imageSrc**         | string             | true        | -                 | The image to be filtered                                               |
+| p**aintEvent**       | "mousemove" &#124; | "holdclick" | false             | "mousemove"                                                            | The event to be used to paint the image. It can be "mousemove" or "holdclick" |
+| **fromFilter**       | string             | false       | "grayscale(100%)" | The filter to be applied to the image                                  |
+| **toFilter**         | string             | false       | "grayscale(0%)"   | The filter to be applied to the image when the mouse is over the image |
+| **width**            | number             | true        | -                 | The width of the image                                                 |
+| **height**           | number             | true        | -                 | The height of the image                                                |
+| **pixelPaintedSize** | number             | true        | -                 | The size of the pixel painted on the image                             |
+| **canvasStyle**      | object             | false       | -                 | The style of the canvas                                                |
+| **canvasClassName**  | string             | false       | -                 | The className of the canvas                                            |
 
 ## License
 

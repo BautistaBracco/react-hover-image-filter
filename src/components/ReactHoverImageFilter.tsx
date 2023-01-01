@@ -18,11 +18,15 @@ interface ReactHoverImageFilterProps {
   /**  
   Paint event: 'mousemove' or 'holdclick' (holdclick is a custom event that is triggered when the mouse is pressed and held down) 
   */
-  paintEvent: PaintEvent
+  paintEvent?: PaintEvent
   /**
    Canvas style
    */
   canvasStyle?: React.CSSProperties
+  /**  
+  Canvas classname
+  */
+  canvasClassName?: string
   /**  
   Canvas width 
   */
@@ -51,7 +55,8 @@ export function ReactHoverImageFilter ({
   pixelPaintedSize,
   imageSrc,
   canvasStyle,
-  paintEvent,
+  canvasClassName,
+  paintEvent = 'mousemove',
   width,
   height,
   fromFilter = 'grayscale(100%)',
@@ -134,6 +139,7 @@ export function ReactHoverImageFilter ({
       width={width}
       height={height}
       style={{ ...canvasStyle }}
+      className={canvasClassName}
     />
   )
 }

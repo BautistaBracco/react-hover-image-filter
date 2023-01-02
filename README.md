@@ -1,4 +1,4 @@
-## react-hover-image-filter
+# react-hover-image-filter
 
 A simple canvas component that allows you to simulate paint effect with a mouse or finger simulating a paint brush applying a filter to the image on the coordinates of the mouse or finger position
 
@@ -19,7 +19,7 @@ const App = () => {
   return (
 
       <HoverImageFilter
-        image="/beatles.jpg"
+        imageSrc="/beatles.jpg"
         fromFilter="blur(10px)"
         width=500
         height=500

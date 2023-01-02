@@ -42,6 +42,10 @@ export default App
 
 ![Example 2](https://github.com/Pepito27/react-hover-image-filter/blob/main/gif%20sepia.gif?raw=true)
 
+## Warning
+
+The prop "imageSrc" must be a local image. If you want to use an image from an url, you must download it and use it as a local image. This is because the canvas can't access to the image from an url for security reasons.
+
 ## Props
 
 | Prop             | Type                           | Required | Default           | Description                                                                   |

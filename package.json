@@ -1,7 +1,24 @@
 {
   "name": "react-hover-image-filter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple canvas component that allows you to simulate paint effect with a mouse or finger simulating a paint brush applying a filter to the image on the coordinates of the mouse or finger position",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-canvas",
+    "react-paint",
+    "react-paint-effect",
+    "react-paint-brush",
+    "react-paint-brush-effect",
+    "react-hover-image-filter",
+    "react-hover-image-filter-effect",
+    "react-hover-image-filter-brush"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pepito27/react-hover-image-filter",
+    "directory": "https://github.com/Pepito27/react-hover-image-filter"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [

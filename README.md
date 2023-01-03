@@ -12,7 +12,7 @@ npm install react-hover-image-filter
 
 ```jsx
 import React from 'react'
-import HoverImageFilter from 'react-hover-image-filter'
+import { HoverImageFilter } from 'react-hover-image-filter'
 
 
 const App = () => {

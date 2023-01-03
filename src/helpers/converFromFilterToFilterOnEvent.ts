@@ -48,31 +48,3 @@ export function converFromFilterToFilterOnEvent (
   }
   ctx.putImageData(fromPixels, 0, 0)
 }
-
-export function pixelate (
-  sample_size: number,
-  _ctx: CanvasRenderingContext2D,
-  canvasWidth: number,
-  canvasHeight: number
-) {
-  const context = _ctx
-
-  const sourceBuffer32 = new Uint32Array(
-    context.getImageData(0, 0, canvasWidth, canvasHeight).data.buffer
-  )
-
-  // create an alternative to the nested for loop below without losing performance and without using the nested for loop below
-
-  for (let y = 0; y < canvasHeight; y += sample_size) {
-    for (let x = 0; x < canvasWidth; x += sample_size) {
-      const index = x + y * canvasWidth
-
-      const b = (sourceBuffer32[index] >> 16) & 0xff
-      const g = (sourceBuffer32[index] >> 8) & 0xff
-      const r = (sourceBuffer32[index] >> 0) & 0xff
-
-      context.fillStyle = `rgb(${r}, ${g}, ${b})`
-      context.fillRect(x, y, sample_size, sample_size)
-    }
-  }
-}
